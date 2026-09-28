@@ -71,9 +71,8 @@ if (terceiroItemGeneros && terceiroItemGeneros.length >= 2) {
 }
 
 
-// ==========================================
-// B.3. Iterações com iterators
-// ==========================================
+
+//Iterações com iterators
 console.log("\n--- B.3.A. Listagem com forEach ---");
 catalogo.forEach(item => {
   console.log(`- [${item.tipo}] ${item.titulo} (${item.ano})`);
@@ -114,9 +113,9 @@ const todosTêmGenero = catalogo.every(item => item.generos && item.generos.leng
 console.log(`Todos os itens têm pelo menos 1 gênero? ${todosTêmGenero}`);
 
 
-// ==========================================
-// B.4. Saída na tela (DOM simples)
-// ==========================================
+
+// B.4. Saída na tela
+
 const totalItens = catalogo.length;
 const totalFilmes = catalogo.filter(item => item.tipo === "filme").length;
 const totalSeries = catalogo.filter(item => item.tipo === "serie").length;
